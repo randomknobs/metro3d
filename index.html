@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    <div style="background-color:black;color:white;"</div>
+     <style>
+     #link { color: #FF0000; }
+  </style>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | METRO</title>
+    <title>ORBITA</title>
+    <audio preload="auto"
+      <source id="sound" src="StreamingAssets/SFX.mp3" type="audio/mpeg" codecs="mp3">
+      Your browser does not support the audio element.
+    </audio>
+    
+    <center><button onclick="start()">PLEASE TAP HERE ONCE IF BROWSING FROM A PHONE TO TURN THE SOUND ON</button></center>
     <script src="Build/UnityLoader.js"></script>
     <script>
+      
+        function start() {
+        document.getElementById("gameContainer").style.visibility= "visible";
+        document.getElementById("sound").play();
+      }
+      UnityLoader.compatibilityCheck=function(e,t,r){t();}; 
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/METRO3D.json");
-    </script>
+   </script>
   </head>
-  <body>
-    <div id="gameContainer" style="width: 960px; height: 600px; margin: auto"></div>
+  <body style="background-color:black;color:white;">
+    
+    <center><div id="gameContainer" style="width: 640px; height: 480px; margin: auto"></div></center>
+    <div style="background-color:black;color:white;"</div>
+    
+ 
+    
   </body>
+
+<footer style="background-color:black;color:white;"> </footer>
 </html>
